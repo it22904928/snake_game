@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background02">
+
+    <Button
+        android:id="@+id/score2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn02"
+        android:text="score"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lilu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        android:gravity="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+        <Button
+            android:id="@+id/score"
+            android:background="@color/black"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="140dp"
+            android:textSize="20dp"
+            android:text="Game Over ! Play Again">
+        </Button>
+
+
+        <Button
+            android:id="@+id/new_game"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="130dp"
+            android:background="@drawable/round_btn"
+            android:text="New Game">
+
+        </Button>
+
+        <Button
+            android:id="@+id/resume"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_game"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="130dp"
+            android:background="@drawable/round_btn"
+            android:text="Resume Game"
+            android:textAlignment="center">
+
+        </Button>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resume"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="130dp"
+            android:background="@drawable/round_btn"
+            android:text="Reset"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/playagain"
+            android:background="@drawable/red02"
+            android:layout_width="150dp"
+            android:textAlignment="center"
+            android:layout_height="80dp"
+            android:layout_below="@id/resume"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Game Over ! Play Again">
+
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/board"
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lilu"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/highest_score"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_btn02"
+            android:text="Highest Score: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/up"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="UP"
+                android:background="@drawable/btn03"
+                >
+            </Button>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="LEFT"
+                android:background="@drawable/btn03"></Button>
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="pause"
+                android:background="@drawable/btn03"></Button>
+
+            <Button
+                android:id="@+id/right"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="RIGHT"
+                android:background="@drawable/btn03">
+            </Button>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/down"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="DOWN"
+                android:background="@drawable/btn03"></Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
